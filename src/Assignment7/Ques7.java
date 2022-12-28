@@ -1,0 +1,24 @@
+package Assignment7;
+
+public class Ques7 {
+    static void permutation(String str, String ans) {
+
+        if (str.length() == 0) {
+            System.out.print(ans + ",");
+            return;
+        }
+        for (int i = 0; i < str.length(); i++) {
+
+            String r = str.substring(0, i) + str.substring(i + 1);
+            permutation(r, ans + str.charAt(i));
+        }
+    }
+    public static void main(String[] args)
+    {
+        String str="abc";
+        permutation(str,"");
+
+
+    }
+
+}
