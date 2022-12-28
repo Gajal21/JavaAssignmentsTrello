@@ -23,7 +23,7 @@ public class Ques1 {
            if(e.getValue()==1){
                ans=e.getKey();
                break;
-           }
+          }
         }
         System.out.print(ans);
     }
